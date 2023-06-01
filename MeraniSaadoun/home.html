@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+
+  <style>
+    body {
+      background-image: url("bookk.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: rgba(242, 242, 242, 0.7);
+      backdrop-filter: blur(5px);
+      border-radius: 50px;
+    }
+
+    .navbar-title {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-link {
+      display: block;
+      margin-left: 10px;
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #ff7200;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-item {
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-item:hover {
+      background-color: #e6e6e6;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(50px);
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 36px;
+      color: #ff5500;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <h3>BOOK<br>EXCHANGE</h3>
+      </div>
+      <ul class="navbar">
+        <li class="navbar"><a class="nav-link" href="login_form.php ">Se connecter</a></li>
+        <li class="navbar"><a class="nav-link" href="register_form.php">S'inscrire</a></li>
+        <li class="navbar"><a class="nav-link" href="Ajoute.php">Ajouter</a></li>
+        <li class="navbar"><a class="nav-link" href="book.php">consulter</a></li>
+
+        <li class="navbar dropdown">
+          <a class="nav-link" href="#">AUTRE</a>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="contact.php">Contact</a>
+            <a class="dropdown-item" href="about.php">À propos</a>
+            <a class="dropdown-item" href="profil.php"> Mon Profil</a>
+
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <br><br><br>
+  <main>
+    <h1>Bienvenue sur notre site Web !</h1>
+    <p>Profitez de notre contenu et de nos services.</p>
+  </main>
+</body>
+
+</html>
+
